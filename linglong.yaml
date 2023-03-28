@@ -1,0 +1,24 @@
+package:
+  id: fcitx-qt5
+  kind: lib
+  version: 1.2.6.4
+
+base:
+  id: org.deepin.base
+  version: 20.5.0
+
+# intltool fcitx
+depends:
+- id: qtbase
+  version: 5.11.3.15
+
+source:
+  kind: git
+  url: https://github.com/linuxdeepin/fcitx-qt5.git
+  version: 1.2.6.4
+  commit: 9d0a1a6ed89c0dc646d094ceaca23cc34d1ff76b
+  patch:
+  - '#deepin'
+  - deepin-fix-can-be-activated-in-no-input-window.patch
+build:
+  kind: cmake
