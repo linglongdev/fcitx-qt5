@@ -5,7 +5,7 @@ package:
 
 base:
   id: org.deepin.base
-  version: 20.5.0
+  version: 23.0.0
 
 # intltool fcitx
 depends:
@@ -18,7 +18,6 @@ source:
   version: 1.2.6.4
   commit: 9d0a1a6ed89c0dc646d094ceaca23cc34d1ff76b
   patch:
-  - '#deepin'
   - deepin-fix-can-be-activated-in-no-input-window.patch
 build:
   kind: cmake
